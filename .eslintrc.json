@@ -1,5 +1,7 @@
 {
-  "rules": {},
+  "rules": {
+    "react/prop-types": 0
+  },
   "env": {
     "es6": true,
     "browser": true
@@ -13,7 +15,8 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
