@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from 'components/views';
 
 const MainNav = () => {
   return (
-    <div>
+    <Container>
       Main Nav
-    </div>
+    </Container>
   );
 };
 

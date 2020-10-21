@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from 'components/views';
 
 const Trending = () => {
   return (
-    <div>
+    <Container>
       Trending
-    </div>
+    </Container>
   );
 };
 

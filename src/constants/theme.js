@@ -7,7 +7,7 @@ const baseTheme = {
     containerBg: '#555555',
   },
   radius: {
-    lg: '8px',
+    lg: '12px',
   }
 }
 
