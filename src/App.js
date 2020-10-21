@@ -1,13 +1,29 @@
 import React from "react";
-import Heythere from "heythere";
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import themeConstants from 'constants/theme'
+import MainNav from 'components/Navbar';
+import Feed from 'components/Feed';
+import Trending from 'components/Trending';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${props => props.theme.color.appBg};
+  }
+`;
 
 class App extends React.Component {
   render() {
     const { name } = this.props;
     return (
       <>
-        <Heythere />
-        <h1>Hello {name}</h1>
+        <ThemeProvider theme={themeConstants.getTheme()}>
+          <GlobalStyle />
+          <>
+            <MainNav />
+            <Feed />
+            <Trending />
+          </>
+        </ThemeProvider>
       </>
     );
   }
