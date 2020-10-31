@@ -1,13 +1,11 @@
 {
-  "rules": {
-    "react/prop-types": 0
-  },
   "env": {
     "es6": true,
+    "node": true,
     "browser": true
   },
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 8,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -18,11 +16,29 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "plugins": [
-    "react"
-  ]
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "react/prop-types": 0,
+    "semi": 2,
+    "default-case": 2,
+    "curly": 2,
+    "eqeqeq": 2,
+    "brace-style": 2,
+    "no-duplicate-imports": 2,
+    "prefer-const": 1,
+    "object-shorthand": 2,
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "dot-location": ["error", "property"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "new-parens": 2,
+    "operator-linebreak": 2,
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "only-multiline",
+      "imports": "only-multiline",
+      "exports": "only-multiline",
+      "functions": "never"
+    }],
+    "quotes": [2, "single", { "avoidEscape": true }]
+  }
 }
