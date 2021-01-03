@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <script id="hydrated-data">
+    <%- JSON.stringify(config.data) %>
+  </script>
+  <body>
+    <div id="root" className="bg-gray-100"></div>
+    <script src="<%-config.bundlePath%>"></script>
+  </body>
+</html>
