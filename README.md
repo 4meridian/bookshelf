@@ -8,20 +8,11 @@ First install dependencies:
 yarn
 ```
 
-To run in hot module reloading mode:
+To run:
 
 ```sh
-yarn start
+yarn dev
 ```
 
-To create a production build:
-
-```sh
-yarn run build-prod
-```
-
-## Running
-
-Open the file `dist/index.html` in your browser
 
 
